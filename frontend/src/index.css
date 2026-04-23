@@ -1,0 +1,169 @@
+/* 🌙 ROOT VARIABLES */
+:root {
+  --text: #cbd5e1;
+  --text-h: #f8fafc;
+
+  --bg: #0f172a;
+  --card-bg: rgba(30, 41, 59, 0.7);
+
+  --border: #1e293b;
+  --input-bg: #1e293b;
+  --code-bg: #1e293b;
+
+  --accent: #7c3aed;
+  --accent-hover: #6d28d9;
+
+  --success: #22c55e;
+  --danger: #ef4444;
+  --warning: #facc15;
+  --info: #06b6d4;
+
+  --shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+
+  --radius: 12px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 16px/1.5 var(--sans);
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* 🌐 BODY */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* 📦 ROOT WRAPPER */
+#root {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🧾 HEADINGS */
+h1, h2, h3 {
+  color: var(--text-h);
+  margin-bottom: 10px;
+}
+
+/* 📄 PARAGRAPH */
+p {
+  color: var(--text);
+}
+
+/* 🧊 CARD DESIGN */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🧾 INPUT FIELDS */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--input-bg);
+  color: var(--text-h);
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* ✨ INPUT FOCUS */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+}
+
+/* 🔘 BUTTON BASE */
+button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* 🔵 PRIMARY */
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+/* 🟢 SUCCESS */
+.btn-success {
+  background: var(--success);
+  color: white;
+}
+
+/* 🔴 DANGER */
+.btn-danger {
+  background: var(--danger);
+  color: white;
+}
+
+/* 🟡 WARNING */
+.btn-warning {
+  background: var(--warning);
+  color: black;
+}
+
+/* 🔵 INFO */
+.btn-info {
+  background: var(--info);
+  color: white;
+}
+
+/* 🧭 NAVBAR */
+.navbar {
+  background: #020617;
+  border-bottom: 1px solid var(--border);
+  padding: 12px 20px;
+}
+
+/* 📦 BADGES */
+.badge {
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+/* 🧾 CODE STYLE */
+code {
+  background: var(--code-bg);
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-family: var(--mono);
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  #root {
+    padding: 10px;
+  }
+}

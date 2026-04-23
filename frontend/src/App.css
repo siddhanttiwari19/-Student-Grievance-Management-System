@@ -1,0 +1,146 @@
+/* 🌙 GLOBAL DARK THEME */
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 🔥 CONTAINER */
+.container {
+  color: #e2e8f0;
+}
+
+/* 🧊 CARDS (GLASS EFFECT) */
+.card {
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* ========================= */
+/* 🔥 INPUT FIX (IMPORTANT) */
+/* ========================= */
+
+input,
+textarea,
+select,
+.form-control {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+  border: 1px solid #334155 !important;
+  border-radius: 8px;
+}
+
+/* Placeholder */
+.form-control::placeholder,
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8 !important;
+  opacity: 1;
+}
+
+/* Focus */
+.form-control:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  background: #1e293b !important;
+  color: #ffffff !important;
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.6) !important;
+}
+
+/* Fix autofill (Chrome yellow issue) */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #1e293b inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Labels / headings */
+h3, label {
+  color: #f1f5f9 !important;
+}
+
+/* ========================= */
+/* 🔘 BUTTONS */
+/* ========================= */
+
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* PRIMARY */
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+}
+
+/* SUCCESS */
+.btn-success {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border: none;
+  color: white;
+}
+
+/* DANGER */
+.btn-danger {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  color: white;
+}
+
+/* INFO */
+.btn-info {
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  border: none;
+  color: white;
+}
+
+/* WARNING */
+.btn-warning {
+  background: linear-gradient(135deg, #facc15, #eab308);
+  border: none;
+  color: black;
+}
+
+/* ========================= */
+/* 🧭 NAVBAR */
+/* ========================= */
+
+.navbar {
+  background: linear-gradient(135deg, #020617, #1e293b) !important;
+  border-bottom: 1px solid #334155;
+}
+
+/* ========================= */
+/* 📦 BADGES */
+/* ========================= */
+
+.badge {
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
