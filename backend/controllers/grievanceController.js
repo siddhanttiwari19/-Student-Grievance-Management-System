@@ -26,8 +26,11 @@ exports.delete = async (req, res) => {
 };
 
 exports.search = async (req, res) => {
+  const { title } = req.query;
+
   const data = await Grievance.find({
-    title: { $regex: req.query.title, $options: "i" }
+    title: { $regex: title, $options: "i" }
   });
+
   res.json(data);
 };
